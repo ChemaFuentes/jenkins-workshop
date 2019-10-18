@@ -7,7 +7,6 @@ const { app } = require('../index')
 chai.use(chaiHttp);
 chai.should();
 
-"bla bla"
 
 describe("General tests", () => {
     describe("GET /", () => {
@@ -21,7 +20,7 @@ describe("General tests", () => {
                   });
          });
 
-         it("should return ok true", (done) => {
+         it("should return ok false", (done) => {
             chai.request(app)
                 .get('/notok')
                 .end((err, res) => {
