@@ -8,7 +8,7 @@ app.get('/notok', (req, res) => res.json({ ok: false }))
 
 app.get('/username', (req, res) => res.json({ username: process.env.USERNAME }))
 
-app.get('/username', (req, res) => res.json({ usernamePassword: process.env.MONGODB_PASSWORD,
+app.get('/usernamepass', (req, res) => res.json({ usernamePassword: process.env.MONGODB_PASSWORD,
 usernamePassword: process.env.MONGODB_PASSWORD_USR,
 usernamePassword: process.env.MONGODB_PASSWORD_PSW }))
 
