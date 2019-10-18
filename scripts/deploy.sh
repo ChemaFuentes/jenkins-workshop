@@ -1,5 +1,5 @@
 set -x
-nmp start &
+npm start &
 sleep 1
 echo $! > .pid
 set +x
