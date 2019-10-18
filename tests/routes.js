@@ -7,6 +7,7 @@ const { app } = require('../index')
 chai.use(chaiHttp);
 chai.should();
 
+"bla bla"
 
 describe("General tests", () => {
     describe("GET /", () => {
