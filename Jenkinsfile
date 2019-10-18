@@ -8,7 +8,7 @@ pipeline {
     environment {
         CI = 'true'
 		USERNAME = credentials('USERNAME')
-		MONGODB_PASSWORD = credentials('MONGODB_PASSWORD')
+		MONGODB_PASSWORD = credentials(MONGO_DB_PASSWORD)
     }
     stages {
         stage('Build') {
